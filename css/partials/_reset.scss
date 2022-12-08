@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    &::selection {
+        background-color: $Color1;
+        color: $Color2;
+    }
+}
+
+input {
+    border-radius: 5px;
+    width: 250px;
+    height: 25px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: beige;
+    padding: 3px;
+
+    &:hover {
+        border: 2px solid #ce7e57;
+     }
+}

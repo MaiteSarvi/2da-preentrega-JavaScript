@@ -1,0 +1,59 @@
+main {
+    .imagenprincipal {
+        background-image: url("../assets/imagenes/imagen\ principal.jpg");
+        height: 800px;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: flex;
+    
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 70px;
+           
+            .tracking-in-expand{-webkit-animation:tracking-in-expand 1s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand 1s cubic-bezier(.215,.61,.355,1.000) both}
+            @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+    
+            h2 {
+                font-family: $MangoBold;
+                font-size: 60px;
+            }
+            
+            h3 {
+                font-family: $MangoBold;
+                font-size: 30px; 
+            }
+            h4 {
+                font-family: $MonoMedium;
+                font-size: 15px;
+                font-weight: 300;
+                letter-spacing: 2px;
+                text-decoration-line: overline;
+            }
+            
+            &-boton {
+                display: block;
+                width: 90px;
+                margin-top: 20px;
+                font-family: $MonoMedium;
+                font-size: 13px;
+                transition: .5s, .5s;
+                background-color: $Color1;
+                text-decoration: none;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 5px;
+                border-radius: 10px; 
+                color: $Color3;
+
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: $Color2;
+                }
+            }
+        }
+    }
+}
+        

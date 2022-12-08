@@ -1,0 +1,124 @@
+main {
+    .suscribite {
+        h3 {
+            font-family: $MangoBold;
+            font-size: 18px;
+            color: $Color1;
+            margin-bottom: 10px;
+        }
+       
+        p {
+            font-family: $MonoMedium;
+            font-size: 14px;
+            color: $Color3;
+            letter-spacing: -1;
+        }
+    }
+ 
+    .suscribite2 {
+     a {
+         background-color: $Color1;
+         transition: .5s, .5s;
+         &:hover {
+            background-color: $Color2;
+           }
+        }
+     
+    }
+ 
+    .suscribite1 {
+     input {
+         background-color: $Color2;
+        }
+ 
+     a {
+         background-color: $Color1;
+         transition: .5s,.5s;
+         &:hover {
+             background-color: $Color2;
+            }
+        }
+    }
+ 
+    .contacto2 {
+     
+        h2 {
+         font-family: $MangoBold;
+         font-size: 18px;
+         color: $Color1;
+         margin-bottom: 10px;
+        }
+     
+        h4 {
+         font-family: $MonoMedium;
+         font-size: 14px;
+         color: $Color3;
+         letter-spacing: -1;
+        }
+    }
+    
+    $redes: (
+        facebook: rgb(91, 91, 255),
+        instagram: rgb(255, 142, 185),
+        whatsapp: rgb(141, 228, 141),
+        envelope-paper-fill: rgb(240, 109, 109)
+    );
+    @each $redsocial, $colordered in $redes {
+        .bi-#{$redsocial} {
+            background-color: $colordered;
+        }
+    }
+    i {
+        padding: 10px;
+        border-radius: 40px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+}
+ 
+ 
+ 
+ @media screen and(max-width:650px) {
+    main {
+        .suscribite{
+            h3{
+                font-size: 15px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+        .contacto{
+            .contacto2{
+                padding: 0;
+                .contacto__ubicacion{
+                    iframe{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ @media screen and(max-width:450px) {
+    main {
+        .contacto{
+            width: 100%;
+            .contacto2{
+                h2 {
+                font-size: 15px;   
+                }
+                h4 {
+                font-size: 10px;
+                }
+                padding: 0;
+                .contacto__ubicacion{
+                    iframe{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+ }

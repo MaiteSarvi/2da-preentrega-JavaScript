@@ -1,0 +1,57 @@
+footer {
+    .footer {
+        @include medidas (100%,auto);
+        background-color: $Color2;
+        display: grid;
+        justify-content:center;
+
+        &__grupo1 {
+            max-width: 1200px;
+            margin:auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            padding: 40px;
+
+            &-box {
+                h2 {
+                    color: $Color1;
+                    font-size: 15px;
+                    font-family: $MangoBold;
+                    margin-bottom: 10px; 
+                }
+                h3 {
+                    color: rgb(32, 32, 32);
+                    font-size: 12px;
+                    font-family: $MonoMedium;
+                    letter-spacing: 0px;
+                    margin-bottom: 18px
+                }
+            }
+        }
+    }
+}
+    
+@media screen and (max-width:615px) {
+    footer {
+        .footer{
+            &__grupo1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &-box{
+                    h2 {
+                        text-align: center;
+                    }
+                    h3 {
+                        text-align: center;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}                                                
+

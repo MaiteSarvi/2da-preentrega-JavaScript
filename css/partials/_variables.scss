@@ -1,0 +1,46 @@
+@font-face {
+    font-family: mono;
+    src: url("../assets/ttf2/DROIDSANSMONO.TTF");
+    font-style: medium;
+}
+$MonoMedium: "mono", medium;
+
+@font-face {
+    font-family: mango;
+    src: url("../assets/ttf2/BLACK-MANGO-BOLD.TTF");
+    font-style: bold;
+}
+$MangoBold: "mango", bold;
+
+@font-face {
+    font-family: mango;
+    src: url("../assets/ttf2/BLACK-MANGO-LIGHT.TTF");
+    font-style: light;
+}
+$MangoLight: "mango", light;
+
+@font-face {
+    font-family: mango;
+    src: url("../assets/ttf2/BLACK-MANGO-MEDIUM.TTF");
+    font-style: medium;
+}
+$MangoMedium: "mango", medium;
+
+$Color1: #ce7e57;
+
+$Color2: #f5f5dc;
+
+$Color3: #000000;
+
+$Color4: #ffffff;
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin medidas ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
