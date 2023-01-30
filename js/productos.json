@@ -1,0 +1,38 @@
+[
+    {
+        "id":"Buzo-Negro-01",
+        "titulo":"Buzo Negro",
+        "imagen": "../assets/imagenes/producto1.jpg",
+        "precio": 3600
+    },
+    {
+        "id":"Buzo-Rojo-02",
+        "titulo":"Buzo Rojo",
+        "imagen": "../assets/imagenes/producto2.jpg",
+        "precio": 3600
+    },
+    {
+        "id":"Buzo-Rosa-03",
+        "titulo":"Buzo Rosa",
+        "imagen": "../assets/imagenes/producto3.jpg",
+        "precio": 3600
+    },
+    {
+        "id":"Zapatillas-Rosas-04",
+        "titulo":"Zapatillas Rosas",
+        "imagen": "../assets/imagenes/producto4.jpg",
+        "precio": 12000
+    },
+    {
+        "id":"Pollera-Negra-05",
+        "titulo":"Pollera Negra",
+        "imagen": "../assets/imagenes/producto5.jpg",
+        "precio": 3500
+    },
+    {
+        "id":"Pollera-Tableada-06",
+        "titulo":"Pollera Tableada",
+        "imagen": "../assets/imagenes/producto6.jpg",
+        "precio": 3000
+    }
+]
